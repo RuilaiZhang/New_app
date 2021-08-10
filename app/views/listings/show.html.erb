@@ -29,6 +29,15 @@
 </p>
 
 <p>
+  <strong>Features:</strong>
+  <ul>
+    <% @listing.features.each do |feature| %>
+      <li><%=feature.name%></li>
+    <% end %>
+  </ul>
+</p>
+
+<p>
   <strong>Sold:</strong>
   <%= @listing.sold %>
 </p>
