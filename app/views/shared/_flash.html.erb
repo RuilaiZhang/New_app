@@ -1,5 +1,5 @@
     <% flash.each do |name, msg| %>
-        <div class="alert alert-warning alert-dismissable" role="alert">
+        <div class="alert alert-<%= select_alert_subclass(name) %> alert-dismissable" role="alert">
             <button class="close" data-dismiss="alert">
                 <small><sup>x</sup></small>
             </button>
