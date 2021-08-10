@@ -16,13 +16,23 @@ categories = [
     {name: "Shoes", description: "dfasdfasdfasdf"}
 ]
 
-# if User.count == 0
-#     User.create(username: "Tester", email: "test@test.com", password: "password", password_confirmation: "")
-# end
+features = ["Waterproof", "Vegan", "Tearproof", "Fireproof", "Sustainable", "Fair Trade Labour", "Genuine"]
+
+
+if User.count == 0
+    User.create(username: "Tester", email: "test@test.com", password: "password", password_confirmation: "")
+end
 
 if Category.count == 0
     categories.each do |category|
         Category.create(name: category[:name], description: category[:description])
         puts "created #{category[:name]} category"
+    end
+end
+
+if Feature.count == 0
+    features.each do |feature|
+        Feature.create(name: feature)
+        puts "Create #{feature} feature"
     end
 end
