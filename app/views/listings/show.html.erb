@@ -13,6 +13,13 @@
       <br>
       <br>
       <p class='blockquote mt-2'><%=@listing.description%></p>
+      <%if current_user && @listing.sold == false%>
+        <%= button_to "Buy: $#{@listing.price / 100.00}", create_payment_intent_path, method: :post, remote: true, params:{id: @listing.id}, class: "btn btn-primary p-3"%>
+      <%elsif @listing.sold == true%>
+        <button class='btn btn-secondary' disabled>SOLD</button>
+      <%else%>
+        <%=button_to "Login to buy", new_user_session_path, class: "btn btn-info"%>
+      <%end%>
     </div>
   </div>
 </div>
