@@ -1,34 +1,3 @@
 <div class='container d-flex flex-column flex-md-row px-2 my-2 my-md-5'>
-  <div class='content col-12 col-md-7 col-lg-8 p-0 pr-md-3'> 
-      <div class='col-12 p-0 main-preview mb-4'>
-
-      </div>
-  </div>
-    <div class= 'sidebar col-lg-4 p-0 mx-2 d-md-block'>
-      <h1 class='mb-sm-2 mb-md-1'><%=@listing.title%></h1>
-      <h4 class='text-muted'>Difficulty: <%=@listing.condition.capitalize%></h4>
-      <%@listing.features.each do |feature|%>
-        <span class='badge badge-pill badge-info'><%=feature.name%></span>
-      <%end%>
-      <br>
-      <br>
-      <p class='blockquote mt-2'><%=@listing.description%></p>
-      <%if current_user && @listing.sold == false%>
-        <%= button_to "Buy: $#{@listing.price / 100.00}", create_payment_intent_path, method: :post, remote: true, params:{id: @listing.id}, class: "btn btn-primary p-3"%>
-      <%elsif @listing.sold == true%>
-        <button class='btn btn-secondary' disabled>SOLD</button>
-      <%else%>
-        <%=button_to "Login to buy", new_user_session_path, class: "btn btn-info"%>
-      <%end%>
-    </div>
-  </div>
-</div>
-<div class='container'>
-  <div class ='d-flex justify-content-evenly'>
-  
-  <% if user_signed_in? %>
-    <%=link_to "Edit", edit_listing_path(@listing.id), class: "btn btn-warning mr-3" if current_user.id == @listing.user_id %>
-    <%=link_to "Delete", @listing, method: :delete, data: {confirm: "Are you sure?"} , class: "btn btn-danger mr-3" if current_user.id == @listing.user_id %>
-  <% end %>
-  </div>
+  <h1>New try</h1>
 </div>
