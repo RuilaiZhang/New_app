@@ -1,48 +1,22 @@
-<p>
-  <strong>User:</strong>
-  <%= @listing.user_id %>
-</p>
-
-<p>
-  <strong>Category:</strong>
-  <%= @listing.category.name %>
-</p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @listing.title %>
-</p>
-
-<p>
-  <strong>Condition:</strong>
-  <%= @listing.condition %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @listing.price %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @listing.description %>
-</p>
-
-<p>
-  <strong>Features:</strong>
-  <ul>
-    <% @listing.features.each do |feature| %>
-      <li><%=feature.name%></li>
-    <% end %>
-  </ul>
-</p>
-
-  <%= image_tag @listing.picture, class: 'main-image' if @listing.picture.attached? %>
-
-<p>
-  <strong>Sold:</strong>
-  <%= @listing.sold %>
-</p>
-
-<%= link_to 'Edit', edit_listing_path(@listing) %> |
-<%= link_to 'Back', listings_path %>
+<div class='container d-flex flex-column flex-md-row px-2 my-2 my-md-5'>
+  <div class='content col-12 col-md-7 col-lg-8 p-0 pr-md-3'> 
+      <div class='col-12 p-0 main-preview mb-4'>
+          <%=image_tag image_select(@listing), class:'thumbnail card-img top'%>
+      </div>
+  </div>
+    <div class= 'sidebar col-lg-4 p-0 mx-2 d-md-block'>
+      <h1 class='mb-sm-2 mb-md-5'><%=@listing.title%></h1>
+      <h4 class='text-muted'>Condition: <%=@listing.condition.capitalize%></h4>
+      <%@listing.features.each do |feature|%>
+        <span class='badge badge-pill badge-info'><%=feature.name%></span>
+        <%end%>
+            <p class='blockquote mt-2'><%=@listing.description%></p>
+    </div>
+  </div>
+</div>
+<div class='container'>
+  <div class ='d-flex justify-content-evenly'>
+  <%=link_to "Edit", edit_listing_path(@listing.id), class: "btn btn-warning mr-3" if current_user.id == @listing.user_id%>
+  <%=link_to "Delete", @listing, method: :delete, data: {confirm: "Are you sure?"} , class: "btn btn-danger mr-3" if current_user.id == @listing.user_id %>
+  </div>
+</div>
