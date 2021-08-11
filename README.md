@@ -1,28 +1,35 @@
 # README
-## Q7
+## Q7 Target
 
-## Q8
+## Q8 Problems
 
-## Q9
+## Q9 Deployed app URL
 
-## Q10
+## Q10 Github repository
 
-## Q11
+## Q11 description
+-Purpose
+-Functionality
+-Sitemap
+-Screenshots
+-Target audience
+-Tech Stack
 
-## Q12
+## Q12 User stories
 
-## Q13
+## Q13 Wireframes
 ![](docs/WF_Home.png)
-## Q14
 
-## Q15
+## Q14 ERD
 
-## Q16
+## Q15 High-level components
 
-## Q17
+## Q16 Third party services
 
-## Q18
+## Q17 Model relationship (active record associations)
 
-## Q19
+## Q18 Database relations
 
-## Q20
+## Q19 Database schema design
+
+## Q20 Tasks allocated and tracked
