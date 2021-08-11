@@ -7,16 +7,16 @@
 #   Character.create(name: 'Luke', movie: movies.first)
  
 categories = [
-    {name: "Outerwear", description: "Jackets, coats, etc"},
-    {name: "Dress", description: "dfasdfasdfasdf"},
-    {name: "Bottom", description: "dsdfdfasdf"},
-    {name: "Sweatshirt", description: "dfasdsdfasdf"},
-    {name: "Asssesories", description: "dfasdfasdfasdf"},
-    {name: "Knitwear", description: "dfasdfasdfasdf"},
-    {name: "Shoes", description: "dfasdfasdfasdf"}
+    {name: "Programming", description: "asdfasdfasdf"},
+    {name: "Math", description: "dfasdfasdfasdf"},
+    {name: "Physics", description: "dsdfdfasdf"},
+    {name: "Dancing", description: "dfasdsdfasdf"},
+    {name: "Singing", description: "dfasdfasdfasdf"},
+    {name: "Writing", description: "dfasdfasdfasdf"},
+    {name: "Universe", description: "afdafsdfasdfasd"}
 ]
 
-features = ["Waterproof", "Vegan", "Tearproof", "Fireproof", "Sustainable", "Fair Trade Labour", "Genuine"]
+features = ["Certificate", "Assignments", "Tutoring", "Demo Video", "Free Cancellation"]
 
 
 if User.count == 0

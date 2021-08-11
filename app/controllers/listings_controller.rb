@@ -77,10 +77,17 @@ class ListingsController < ApplicationController
 
   # DELETE /listings/1 or /listings/1.json
   def destroy
-    @listing.destroy
-    respond_to do |format|
-      format.html { redirect_to listings_url, notice: "Listing was successfully destroyed." }
-      format.json { head :no_content }
+    begin
+      @listing.destroy
+      respond_to do |format|
+        format.html { redirect_to listings_url, notice: "This course was successfully deleted." }
+        format.json { head :no_content }
+      end
+    rescue
+      respond_to do |format|
+        format.html { redirect_to listings_url, notice: "You are not authorized to delete sold item." }
+        format.json { head :no_content }
+      end
     end
   end
 

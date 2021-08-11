@@ -4,7 +4,7 @@ class Listing < ApplicationRecord
   has_many :listings_features
   has_many :features, through: :listings_features, dependent: :destroy
   accepts_nested_attributes_for :listings_features
-  enum condition: {damaged: 0, poor: 1, good: 2, excellent: 3, mint: 4}
+  enum condition: {Entry: 0, Easy: 1, Medium: 2, Hard: 3, Professional: 4}
   has_one_attached :picture
 
   before_save :remove_whitespace
