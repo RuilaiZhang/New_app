@@ -37,6 +37,8 @@
   </ul>
 </p>
 
+  <%= image_tag @listing.picture, class: 'main-image' if @listing.picture.attached? %>
+
 <p>
   <strong>Sold:</strong>
   <%= @listing.sold %>
