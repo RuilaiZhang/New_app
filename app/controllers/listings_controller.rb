@@ -1,6 +1,8 @@
 class ListingsController < ApplicationController
   before_action :set_listing, only: %i[ show edit update destroy ]
   before_action :authenticate_user!, except: [:index, :show]
+  before_action :authorise_user, only: [:edit, :update, :destroy]
+  # before_action :set_user_listings, only: [:edit, :update, :destroy]
   before_action :set_form_vars, only: [:new, :edit]
 
   # GET /listings or /listings.json
@@ -10,6 +12,30 @@ class ListingsController < ApplicationController
 
   # GET /listings/1 or /listings/1.json
   def show
+    session = Stripe::Checkout::Session.create(
+      payment_method_types: ['card'], 
+      customer_email: current_user&.email, #current_user && current_user.email 
+      line_items: [{
+        name: @listing.title, 
+        description: @listing.description, 
+        amount: @listing.price,
+        currency: 'aud', 
+        quantity: 1
+      }], 
+      payment_intent_data: {
+        metadata: {
+          user_id: current_user&.id,
+          listing_id: @listing.id
+        }
+      }, 
+      success_url: "#{root_url}/success?title=#{@listing.title}", 
+      cancel_url: "#{root_url}/listings"
+    )
+
+    @session_id = session.id 
+    puts "*********"
+    pp @session_id
+    puts "*********"
   end
 
   # GET /listings/new
@@ -64,6 +90,21 @@ class ListingsController < ApplicationController
       @listing = Listing.find(params[:id])
     end
 
+    # def set_user_listings 
+    #   @listing = current_user.listings.find_by_id(params[:id])
+    #   if @listing == nil 
+    #     flash[:error] = "You're not allowed to do that"
+    #     redirect_to listings_path
+    #   end 
+    # end 
+
+    def authorise_user
+      if current_user.id != @listing.user_id
+        flash[:error] = "You're not allowed to do that"
+        redirect_to listings_path
+      end 
+    end 
+
     # Only allow a list of trusted parameters through.
     def listing_params
       params.require(:listing).permit(:user_id, :category_id, :title, :condition, :price, :description, :sold, :picture, feature_ids: [])
@@ -73,6 +114,5 @@ class ListingsController < ApplicationController
       @categories = Category.all
       @conditions = Listing.conditions.keys
       @features = Feature.all
-    end
-
+    end 
 end
