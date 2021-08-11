@@ -1,5 +1,5 @@
 # README
-## Q7 Target
+## Q7 Goal
 
 ## Q8 Problems
 
