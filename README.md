@@ -13,7 +13,7 @@ Solving the problem that people who stay at home have nothing to do during the p
 - Features
 As an educator, you can create any course in different areas, the course can belong to any category to suits different needs. You can add a difficulty level and special features for your course and give it a price of course. In addition, you can upload a picture and write a brief description for your course to attract students. After you publish it, you still can edit it as the owner. As a student, you can view any courses listed and buy courses that are still available by card. Both types of uses will have their own account, and they are only permitted to do authorized operations.
 - Sitemap
-![](docs/Site Map.png)
+![](docs/Site_Map.png)
 - Screenshots
 ![](docs/Screenshot_1.png)
 ![](docs/Screenshot_2.png)
