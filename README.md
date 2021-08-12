@@ -9,9 +9,23 @@ https://ray-project.herokuapp.com/
 https://github.com/RuilaiZhang/New_app
 ## Q11 description
 - Purpose
-- Functionality
+Solving the problem that people who stay at home have nothing to do during the pandemic period. However, their time schedule can not support them to attend a proper class. Also，some people only want to learn some basics in some area for interests, spend lots of money to learn the whole procedure to be a professional is not what they really need. In this case, an online 1 on 1 course will solve their needs perfectly. On the other hand, you also can be a teacher when you are free if you are talented in some area, you can share your skill with someone else and earn some money in the mean time.
+- Features
+As an educator, you can create any course in different areas, the course can belong to any category to suits different needs. You can add a difficulty level and special features for your course and give it a price of course. In addition, you can upload a picture and write a brief description for your course to attract students. After you publish it, you still can edit it as the owner. As a student, you can view any courses listed and buy courses that are still available by card. Both types of uses will have their own account, and they are only permitted to do authorized operations.
 - Sitemap
+![](docs/Site Map.png)
 - Screenshots
+![](docs/Screenshot_1.png)
+![](docs/Screenshot_2.png)
+![](docs/Screenshot_3.png)
+![](docs/Screenshot_4.png)
+![](docs/Screenshot_5.png)
+![](docs/Screenshot_6.png)
+![](docs/Screenshot_7.png)
+![](docs/Screenshot_8.png)
+![](docs/Screenshot_9.png)
+![](docs/Screenshot_10.png)
+![](docs/Screenshot_11.png)
 - Target audience
 - Tech Stack
 
