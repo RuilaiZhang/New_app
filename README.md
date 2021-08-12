@@ -52,7 +52,7 @@ As the full stack web developer of this app, I am in charge of adding new featur
 ![](docs/Database_Schema_Design.png)
 
 ## Q15 High-level components
-
+Basically, I used the model view controller framework to build this app. For the model part, I created several models includes listing, feature, listing feature, user, order, and category which basically covers everything I need to describe the relationships between data in my database. In order to let users actually see the website, some views pages are created that include the main layout, listings, payment, and some shared pages such as navbar and flash notice. Last but not the list, I also need some controllers to be the interface between my models and views to process logic and requests which include listings_controller, application_controller, and payments_controller.
 ## Q16 Third party services
 
 ## Q17 Model relationship (active record associations)
