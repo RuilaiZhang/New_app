@@ -4,9 +4,9 @@ Nowadays, more and more people want to learn something in their leisure time, bu
 ## Q8 Reason
 Because of the Covid-19, people spend more time at home doing nothing, more people would feel guilty when they waste lots of time at home. However, there is no better time to learn. In this case, an online course will be a good solution to this situation and the one-on-one teaching mode will give everybody more flexibility, they can decide what time they want to study and this will make them more motivited, less stressed.
 ## Q9 Deployed app URL
-
+https://ray-project.herokuapp.com/
 ## Q10 Github repository
-
+https://github.com/RuilaiZhang/New_app
 ## Q11 description
 - Purpose
 - Functionality
