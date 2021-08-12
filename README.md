@@ -18,8 +18,17 @@
 ## Q12 User stories
 
 ## Q13 Wireframes
+- Home:
 ![](docs/WF_Home.png)
-
+![](docs/WF_Home-m.png)
+- List:
+![](docs/WF_List.png)
+![](docs/WF_List-m.png)
+- Show:
+![](docs/WF_Show.png)
+![](docs/WF_Show-m.png)
+- Create
+- ![](docs/WF_Create.png)
 ## Q14 ERD
 
 ## Q15 High-level components
