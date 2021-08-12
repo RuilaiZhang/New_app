@@ -18,16 +18,16 @@
 ## Q12 User stories
 
 ## Q13 Wireframes
-- Home:
+### Home:
 ![](docs/WF_Home.png)
 ![](docs/WF_Home-m.png)
-- List:
+### List:
 ![](docs/WF_List.png)
 ![](docs/WF_List-m.png)
-- Show:
+### Show:
 ![](docs/WF_Show.png)
 ![](docs/WF_Show-m.png)
-- Create
+### Create
 - ![](docs/WF_Create.png)
 ## Q14 ERD
 
