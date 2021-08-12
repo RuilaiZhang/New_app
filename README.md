@@ -29,8 +29,11 @@ As an educator, you can create any course in different areas, the course can bel
 ![](docs/Screenshot_10.png)
 ![](docs/Screenshot_11.png)
 - Target audience
+
+The target audiences for this app would be people who have tons of time that they have to stay at home and they whether want to earn many in their leisure time or they want to learn something interesting. Both of them will be attracted by this teaching one-on-one teaching mode.
 - Tech Stack
 
+Ruby，Rails，PostgreSQL, Bootstrap, Strip, HTML, CSS, javascript, rspec, Jason, Yarn, ultrahook, AWS
 ## Q12 User stories
 As the full stack web developer of this app, I am in charge of adding new features and debugging and styling with one person. In this case, on the better side, it's easy for me to cooperate with myself without conflict, on the other side, the productivity and efficiency may be good as a whole development team. As the only developer, I have developed the database, authentication, authorized different users, some association, payment method, and styling of course. In the feature, I would like to add internal message features which is makes communicating between users become much easier. Also, I would like to add some security features to protect users' information since the database may get larger when more users come, protecting customers' personal information will become one of the most important issues.
 ## Q13 Wireframes
@@ -46,7 +49,7 @@ As the full stack web developer of this app, I am in charge of adding new featur
 ### Create:
 ![](docs/WF_Create.png)
 ## Q14 ERD
-![](docs/Database Schema Design.png)
+![](docs/Database_Schema_Design.png)
 
 ## Q15 High-level components
 
