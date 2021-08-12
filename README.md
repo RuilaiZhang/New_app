@@ -56,7 +56,7 @@ Basically, I used the model view controller framework to build this app. For the
 ## Q16 Third party services
 Third-party services that I used in this app include stripe payment. In order to use this, we need API and keys to allow us to use this feature, we also need to install gems and using ultrabook to fully make this service works. Another one is bootstrap which consumes me lots of time to make it compatible with newest version of rails. After installing the ruby gem, I can style my web pages much easier than before
 ## Q17 Model relationship (active record associations)
-
+The model User's primary key is "user_id", and it can have many listings, many sold orders, and many bought orders. For those orders, a new model called "Orders" belongs to the model "listing" and also "buyers" and "sellers". The so-called "listing" model belongs to the model "user" and "category", and It can have many listings' features and features as well. Talked about "feature", it can have many listings' features and also many listings. So this "listing_feature" model needs belonging not only to listing but also feature. The last model is called "category" and it needs to have many listings only.
 ## Q18 Database relations
 
 ## Q19 Database schema design
