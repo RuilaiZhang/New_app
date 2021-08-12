@@ -28,7 +28,7 @@
 ![](docs/WF_Show.png)
 ![](docs/WF_Show-m.png)
 ### Create
-- ![](docs/WF_Create.png)
+![](docs/WF_Create.png)
 ## Q14 ERD
 
 ## Q15 High-level components
@@ -42,3 +42,5 @@
 ## Q19 Database schema design
 
 ## Q20 Tasks allocated and tracked
+### I use trello board to record tasks and track them, here is the screenshot of my trello board.
+![](docs/Trello.png)
