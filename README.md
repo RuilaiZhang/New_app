@@ -54,7 +54,7 @@ As the full stack web developer of this app, I am in charge of adding new featur
 ## Q15 High-level components
 Basically, I used the model view controller framework to build this app. For the model part, I created several models includes listing, feature, listing feature, user, order, and category which basically covers everything I need to describe the relationships between data in my database. In order to let users actually see the website, some views pages are created that include the main layout, listings, payment, and some shared pages such as navbar and flash notice. Last but not the list, I also need some controllers to be the interface between my models and views to process logic and requests which include listings_controller, application_controller, and payments_controller.
 ## Q16 Third party services
-
+Third-party services that I used in this app include stripe payment. In order to use this, we need API and keys to allow us to use this feature, we also need to install gems and using ultrabook to fully make this service works. Another one is bootstrap which consumes me lots of time to make it compatible with newest version of rails. After installing the ruby gem, I can style my web pages much easier than before
 ## Q17 Model relationship (active record associations)
 
 ## Q18 Database relations
