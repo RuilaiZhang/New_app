@@ -60,6 +60,7 @@ As the full stack web developer of this app, I am in charge of adding new featur
 ## Q18 Database relations
 
 ## Q19 Database schema design
+Because the time I have to develop this application is very limited, lots of information and content that I planed in ER diagram are not in my real database scheme design. Most of the changes are about the clients, I deleted that part and only focus on the educator and students which are sellers and buyers which is good enough for me at this moment. It still can solve the problem and have big market, especially during pandemics.
 ![](docs/ERD.PNG)
 
 ## Q20 Tasks allocated and tracked
