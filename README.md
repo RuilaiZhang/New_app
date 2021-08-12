@@ -32,7 +32,7 @@ As an educator, you can create any course in different areas, the course can bel
 - Tech Stack
 
 ## Q12 User stories
-
+As the full stack web developer of this app, I am in charge of adding new features and debugging and styling with one person. In this case, on the better side, it's easy for me to cooperate with myself without conflict, on the other side, the productivity and efficiency may be good as a whole development team. As the only developer, I have developed the database, authentication, authorized different users, some association, payment method, and styling of course. In the feature, I would like to add internal message features which is makes communicating between users become much easier. Also, I would like to add some security features to protect users' information since the database may get larger when more users come, protecting customers' personal information will become one of the most important issues.
 ## Q13 Wireframes
 ### Home:
 ![](docs/WF_Home.png)
@@ -43,9 +43,10 @@ As an educator, you can create any course in different areas, the course can bel
 ### Show:
 ![](docs/WF_Show.png)
 ![](docs/WF_Show-m.png)
-### Create
+### Create:
 ![](docs/WF_Create.png)
 ## Q14 ERD
+![](docs/Database Schema Design.png)
 
 ## Q15 High-level components
 
@@ -56,6 +57,7 @@ As an educator, you can create any course in different areas, the course can bel
 ## Q18 Database relations
 
 ## Q19 Database schema design
+![](docs/ERD.PNG)
 
 ## Q20 Tasks allocated and tracked
 ### I use trello board to record tasks and track them, here is the screenshot of my trello board.
